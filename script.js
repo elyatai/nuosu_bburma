@@ -1,6 +1,5 @@
 $(document).ready(function() {
-	$('#input').setInterval(romanize, 50);
-	romanize();
+	setInterval(romanize, 50);
 });
 
 function romanize() {
