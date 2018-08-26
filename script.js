@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	setInterval(() => romanize, 50);
+	setInterval(romanize, 50);
 });
 
 last = '';
