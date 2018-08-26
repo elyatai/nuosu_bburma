@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('#input').keydown(() => setTimeout(romanize, 1));
+	$('#input').setInterval(romanize, 50);
 	romanize();
 });
 
