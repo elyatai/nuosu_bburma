@@ -1,9 +1,13 @@
 $(document).ready(function() {
-	setInterval(romanize, 50);
+	setInterval(() => romanize, 50);
 });
 
+last = '';
 function romanize() {
-	let chars = [...$('#input').val()];
+	let i = $('#input').val();
+	if(i === last) return;
+	last = i;
+	let chars = [...i];
 	let roman = chars.map(c => convert(c, 'roman')).join(' ');
 	let ipa = chars.map(c => convert(c, 'ipa')).join(' ');
 	$('#roman').text(roman);
